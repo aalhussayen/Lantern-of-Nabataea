@@ -1,0 +1,27 @@
+# Godot 4+ specific ignores
+.godot/
+!/.godot/extension_list.cfg
+
+# Godot-specific exports and translations
+*.translation
+export.cfg
+export_presets.cfg
+
+# macOS specific ignores
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Trashes
+
+# Windows specific ignores
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.cab
+*.lnk
+
+# Linux specific ignores
+*~
+.directory
