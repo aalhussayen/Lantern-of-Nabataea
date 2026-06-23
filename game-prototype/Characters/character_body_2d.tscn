@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dmb2hauwgeuqj"]
+
+[ext_resource type="Script" uid="uid://6okj7lvh6tjb" path="res://Characters/player_cat.gd" id="1_6ldss"]
+[ext_resource type="Texture2D" uid="uid://cmqotas0n0n5l" path="res://ART/Abdullah/Oday/sprite_sheet-removebg-preview.png" id="2_4fmj6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1sodm"]
+size = Vector2(89.5, 85)
+
+[node name="(Oday) CharacterBody2D" type="CharacterBody2D" unique_id=1098017634]
+script = ExtResource("1_6ldss")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=938524830]
+position = Vector2(0, 2)
+texture = ExtResource("2_4fmj6")
+hframes = 2
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1399662115]
+position = Vector2(2.25, 10.5)
+shape = SubResource("RectangleShape2D_1sodm")
